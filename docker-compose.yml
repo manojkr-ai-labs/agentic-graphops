@@ -1,0 +1,6 @@
+# FalkorDB only. The API and the UI stay host processes.
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    ports:
+      - "6379:6379"
