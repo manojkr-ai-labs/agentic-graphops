@@ -2,7 +2,7 @@
 
 GraphOps investigates a payment-service incident by traversing a tenant graph in FalkorDB. One agent plans six read tools, cites the rows they return, and proposes a single next action. A person approves that action. The API then writes one `Decision` back into the same graph. A later session reads that node from FalkorDB.
 
-This is a submission for [Graph Hacks: Context for AI Agents](https://www.wemakedevs.org/hackathons/falkordb) (15–18 October 2026). FalkorDB is the primary graph database. The seed data is synthetic.
+This is a submission for [Graph Hacks: Context for AI Agents](https://www.wemakedevs.org/hackathons/falkordb) (15–18 October 2026). The repository is [manojkr-ai-labs/agentic-graphops](https://github.com/manojkr-ai-labs/agentic-graphops). FalkorDB is the primary graph database. The seed data is synthetic.
 
 The answer is a path: incident, service, dependency, deployment, commit, repository, author, team, prior incident, and resolution. Timing and the commit message are an interpretation, shown apart from the rows. There is no `CAUSED` edge. Removing `CONTAINS` or `SIMILAR_TO` changes the recommendation, because every cited id has to appear in a FalkorDB row from this investigation.
 
@@ -41,7 +41,7 @@ The screen is http://localhost:5173. It is the Calm SRE Precision workspace.
 
 Demo principal: tenant `acme`, actor `incident-commander`, session `ses_01`. The header edits `X-Tenant-Id` and `X-Actor`. Use New session before question 2. `globex` does not contain `INC-203` or `DEC-203-1`.
 
-The working demo video is [demo/graphops-demo.mp4](demo/graphops-demo.mp4). It is two to three minutes and follows the loop below.
+The working demo video is on [YouTube](https://youtu.be/RC1uiiFohPU). It is two to three minutes and follows the loop below.
 
 ## Questions
 
